@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>📑 Registration 📑</h2>
+
+      <form>
+
+        <div class="form-group">
+          <label for="user">Username</label>
+          <div class="icon-input-container">
+            <input
+              type="text"
+              autocomplete="off"
+              id="user"
+              placeholder="5 characters minimum"
+              maxlength="24"
+            />
+            <img src="ressources/check.svg" alt="icon validation" class="icone-verif">
+          </div>
+          <span class="error-msg">Choose a username containing at least 5 characters.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="icon-input-container">
+            <input
+              type="text"
+              autocomplete="off"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <img src="ressources/check.svg" alt="icon validation" class="icone-verif">
+          </div>
+          <span class="error-msg">Enter a valid Email</span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="icon-input-container">
+            <input
+              type="password"
+              autocomplete="off"
+              id="email"
+              placeholder="Enter your pasword"
+            />
+            <img src="ressources/check.svg" alt="icon validation" class="icone-verif">
+          </div>
+          <span class="pswd-info">At least one symbol, one number, as well as 6 characters minimum.</span>
+          <div class="lines">
+            <div class="l1"><span>Low</span></div>
+            <div class="l2"><span>Medium</span></div>
+            <div class="l3"><span>High</span></div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="psw-confirmation">Confirm Password</label>
+          <div class="icon-input-container">
+            <input 
+            type="password"
+            autocomplete="off"
+            id="psw-confirmation"
+            placeholder="Confirm password"
+            >
+            <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
+          </div>
+        </div>
+
+        <button type="submit">Account Creation</button>
+
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
