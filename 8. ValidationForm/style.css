@@ -22,6 +22,18 @@ body {
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 
+.container.shake {
+  animation: shake 0.4s;
+}
+@keyframes shake {
+  33% {
+      transform: translateX(-5px);
+  }
+  66%{
+      transform: translateX(5px);
+  }
+}
+
 h2{
   font-size: 25px;
   font-family: Raleway, sans-serif;
@@ -44,8 +56,8 @@ input{
   font-size: 17px;
   color: white;
   padding: 12px;
-  outline: 0;
   background: transparent;
+  outline: 0;
   border: none;
   border-bottom: 1px solid white;
 }
@@ -79,7 +91,7 @@ input::placeholder{
 }
 
 .pswd-info{
-  margin: 9px;
+  margin-top: 8px;
   color: #a9a9aa;
   font-weight: 400;
   display: block;
@@ -88,7 +100,7 @@ input::placeholder{
 .lines{
   width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
 }
@@ -98,7 +110,7 @@ input::placeholder{
   margin: 15px 5px 20px;
   width: 30%;
   position: relative;
-  /* display: none; */
+  display: none;
 }
 .l1 {
   background-color: red;
